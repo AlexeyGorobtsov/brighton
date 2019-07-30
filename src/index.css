@@ -1,0 +1,197 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: local("Source Sans Pro"), url("./fonts/SourceSansPro-Regular.ttf") format("ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Source Sans Pro Light";
+    src: local("Source Sans Pro Light"), url("./fonts/SourceSansPro-Light.ttf") format("ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Source Sans Pro Bold";
+    src: local("Source Sans Pro Bold"), url("./fonts/SourceSansPro-Bold.ttf") format("ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Source Sans Pro ExtraLight";
+    src: local("Source Sans Pro Bold"), url("./fonts/SourceSansPro-Bold.ttf") format("ttf");
+    font-weight: normal;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    background-image: url('./images/General_Bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.wrap-container {
+    flex: 1140px 0 1;
+    padding: 230px 14px 180px 14px;
+}
+
+.wrap-title h2 {
+    font-size: 72px;
+    font-family: "Source Sans Pro Bold", sans-serif;
+    color: rgb(255, 190, 118);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.wrap-title span {
+    display: inline-block;
+    font-size: 36px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    border-bottom: 2px solid rgb(255, 190, 118);
+}
+
+.wrap-content {
+    display: flex;
+    padding: 120px 0 0 0;
+}
+
+.services-title, .contacts-title {
+    padding: 0 0 40px 0;
+    border-bottom: 2px solid rgb(255, 190, 118);
+}
+
+.services-title p, .contacts-title p {
+    font-size: 30px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgb(255, 190, 118);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.wrap-description ul li {
+    font-size: 20px;
+    font-family: "Source Sans Pro Light", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    list-style: unset;
+    display: flex;
+    align-items: center;
+    padding: 0 0 28px 0;
+}
+
+.wrap-description ul, .wrap-description-contact {
+    padding: 40px 0 0 0;
+    margin: 0;
+}
+
+.wrap-description ul li span {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    margin: 0 10px 0 0;
+}
+
+.services {
+    flex: 350px 0 1;
+    padding: 0 140px 0 0;
+}
+
+.contacts {
+    flex: 616px 0 1;
+}
+
+.wrap-description-contact span {
+    font-size: 20px;
+    font-family: "Source Sans Pro Light", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.wrap-description-contact a, .wrap-description-contact {
+    font-size: 20px;
+    font-family: "Source Sans Pro Light", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.8;
+    text-decoration: none;
+}
+
+.wrap-description-contact a {
+    cursor: pointer;
+}
+
+.email {
+    padding: 72px 0 0 0;
+}
+
+.phone {
+    padding: 20px 0;
+}
+
+@media (max-width: 1200px) {
+    .services-title p, .contacts-title p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .services-title p, .contacts-title p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 990px) {
+    .wrap-content {
+        flex-wrap: wrap;
+    }
+
+    .services-title, .contacts-title {
+        display: inline-flex;
+    }
+
+    .wrap-container {
+        padding: 140px 14px 140px 14px;
+    }
+
+    .wrap-title h2 {
+        font-size: 62px;
+    }
+
+    .wrap-title span {
+        font-size: 28px;
+    }
+
+    .services-title p, .contacts-title p {
+        font-size: 24px;
+    }
+
+    .wrap-content {
+        padding: 80px 0 0 0;
+    }
+
+    .services {
+        padding: 0 0 60px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrap-container {
+        padding: 66px 14px 80px 14px;
+    }
+}
+
